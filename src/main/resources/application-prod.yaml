@@ -1,0 +1,34 @@
+info:
+    app:
+        description: Complete Customer API
+        name: Spring Boot Customer API
+        version: 1.0.0
+    company:
+        name: sohanjain
+management:
+    endpoint:
+        health:
+            show-details: always
+    endpoints:
+        web:
+            exposure:
+                include: health,info,prometheus
+server:
+    error:
+        include-message: always
+    port: 8080
+spring:
+    datasource:
+        password: 8892319976
+        url: jdbc:postgresql://database-1.cuzdfaq8lhbc.ap-south-1.rds.amazonaws.com/sohanjain
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                format_sql: true
+        show-sql: true
+    main:
+        banner-mode: 'off'

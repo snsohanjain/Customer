@@ -11,7 +11,7 @@ public class Customer {
     @Id
     @SequenceGenerator(
             name = "customer_sequence",
-            sequenceName = "student_sequence",
+            sequenceName = "customer_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
